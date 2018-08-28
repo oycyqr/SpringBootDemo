@@ -2,22 +2,27 @@
 <html xmlns="http//www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>用户详情</title>
 </head>
 <body>
+<h2>用户列表</h2>
 <table>
     <tr>
-        <th>id</td>
-        <th>姓名</td>
-        <th>年龄</td>
-        <th>性别</td>
+        <th>id
+        </td>
+        <th>姓名
+        </td>
+        <th>年龄
+        </td>
+        <th>性别
+        </td>
     </tr>
-<tr th:each="user : ${users}">
-    <td th:text="${user.id}"></td>
-    <td th:text="${user.name}"></td>
-    <td th:text="${user.age}"></td>
-    <td th:text="${user.sex}"></td>
-</tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+        <td th:text="${user.sex}"></td>
+    </tr>
 </table>
 </body>
 </html>
